@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(27, 239, 229);
+}
+
+h1{
+    color: white;
+}
+
+.botao{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
