@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(15,145,251);
+    margin: 0%;
+}
+
+h1 {
+    color: rgb(8,58,149);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    width: 100px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 20px;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+}
