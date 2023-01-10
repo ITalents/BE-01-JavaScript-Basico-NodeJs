@@ -1,14 +1,15 @@
 const Carro = require('./carro');
 const Moto = require('./moto');
 
-const carro = new Carro("VW","Fusca", 1993, "compacto", "gasolina", 5, 2);
+const carro = new Carro("vw","Fusca", 1993, "CompActo", "gasolina", 5, 2);
 
-const moto = new Moto("BMW","GS1200",2010, "Rally", "gasolina", 2, 1200);
+const moto = new Moto("","GS1200",2010, "Rally", "gasolina", 2, 1200);
 
+carro.validar();
+carro.padronizar();
 console.log(carro);
-console.log(carro.apresentacao());
-console.log(carro.acelerar());
+carro.acelerar(10);
+carro.desacelerar(5);
+console.log(carro);
 
-console.log(moto);
-console.log(moto.apresentacao());
-console.log(moto.acelerar());
+moto.validar();
