@@ -1,14 +1,13 @@
-class Carro {
-    constructor(marca, modelo, ano, tipo, combustivel){
-        this.marca = marca;
-        this.modelo = modelo;
-        this.ano = ano,
-        this.tipo = tipo,
-        this.combustivel = combustivel;
+const Veiculo = require("./veiculo");
+
+class Carro extends Veiculo{
+    constructor(marca, modelo, ano, tipo, combustivel, numOcupantes, numPortas){
+        super(marca, modelo, ano, tipo, combustivel, numOcupantes);
+        this.numPortas = numPortas;
     }
 
-    apresentacao(){
-        console.log(`${this.marca}, modelo: ${this.modelo} do ano de ${this.ano}`);
+    acelerar(){
+        console.log("+5km/H");
     }
 }
 
