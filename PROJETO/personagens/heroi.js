@@ -36,6 +36,20 @@ class Heroi extends Personagem{
     sacar(moedas){
         this.moedas -= moedas;
     }
+
+    restaurar(){
+        this.vida = 100;
+        this.fome = 100;
+        this.forca = 100;
+    }
+
+    atacar(){
+       return Math.floor(Math.random() * (this.vida + this.forca));
+    }
+    defender(golpe){
+        this.vida -= golpe;
+        this.forca -= golpe;
+    }
 }
 
 module.exports = Heroi;

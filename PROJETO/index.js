@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")();
-const Heroi = require("./heroi");
-const Vilao = require("./vilao1");
+const Heroi = require("./personagens/heroi");
+
+const fase1 = require("./fases/fase1");
 
 //APRESENTACAO DO JOGO
 console.log("MAKE YOUR WAY - TEXT GAME");
@@ -63,3 +64,11 @@ if(prompt("deseja subir na arvore para pegar a sacola? S - sim ou N - não ").to
 }
 
 //FIM DA FASE INTRODUTORIA
+console.log();
+const fase1 = fase1(heroi);
+
+if(fase1){
+    //fase2
+}else{
+    console.log("GAME OVER");
+}

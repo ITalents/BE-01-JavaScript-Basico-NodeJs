@@ -8,7 +8,15 @@ class Vilao extends Personagem{
     }
 
     ataqueEsp(){
-        console.log(this.forcaAtaqueEsp);
+        return this.forcaAtaqueEsp;
+    }
+
+    atacar(){
+        return Math.floor(Math.random() * this.vida);
+    }
+
+    defender(golpe){
+        this.vida -= golpe;
     }
 }
 
